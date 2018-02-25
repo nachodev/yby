@@ -1,10 +1,15 @@
 <?php
-// El mensaje
-$mensaje = "Línea 1\r\nLínea 2\r\nLínea 3";
+$mail = "neosorro@gmail.com";
+$title = "[YourBestYou] Solicitud de mentoría";
 
-// Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
-$mensaje = wordwrap($mensaje, 70, "\r\n");
+// El mensaje
+$message = "Ha habido una nueva solicitud de mentoría para " .$_POST['mentor'] . "<br>";
+$message .= "Nombre: " . $_POST['name'] . "<br>";
+$message .= "Email: " . $_POST['email'] . "<br>" ;
+$message .= "Mensaje: " . $_POST['message'] . "<br>";
 
 // Enviarlo
-mail('neosorro@gmail.com', 'Mi título', $mensaje);
+mail( $mail, $title, $message);
+
+echo json_encode($_POST);
 ?>
