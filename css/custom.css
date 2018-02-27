@@ -39,3 +39,15 @@
   float: right;
   margin-left: 15px;
 }
+
+
+/** MENÚ **/
+
+#social-links{
+  margin-left: 20px;
+}
+
+#social-links a{
+    display: inline-block;
+    padding: 0;
+}

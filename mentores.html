@@ -20,11 +20,11 @@
     <title>Encuentra tu mentor o mentora a medida</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
 
     <!-- BASE CSS -->
     <link href="css/base.css" rel="stylesheet">
@@ -60,16 +60,19 @@
                   </div>
               </div>
               <nav class="col-md-9 col-sm-9 col-xs-9">
-                <nav id="top-bar" class="col-md-9 col-sm-9 col-xs-9">
                   <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
                   <div class="main-menu">
                       <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
                       <ul>
                           <li><a href="index.html">Inicio</a></li>
                           <li><a href="mentores.html">Mentores</a></li>
+                          <li id="social-links">
+                            <a href="https://www.youtube.com/channel/UCB6DW8XeW4jjlesmb1bRzfg" target="_blank"><i class="icon-youtube-play"></i></a>
+                            <a href="https://www.facebook.com/yourbestyou.es/" target="_blank"><i class="icon-facebook"></i></a>
+                            <a href="https://twitter.com/YBESTYOU" target="_blank"><i class="icon-twitter"></i></a>
+                          </li>
                       </ul>
                   </div><!-- End main-menu -->
-                </nav>
               </nav>
           </div>
       </div><!-- container -->
@@ -94,7 +97,7 @@
         <div class="row list_news_tabs">
           <div class="col-md-4 col-sm-4">
             <p><img src="img/experience.jpg" alt="" class="img-responsive"></p>
-            <h3 style="color: #3f9ad6"> Mentores que gran experiencia</h3>
+            <h3 style="color: #3f9ad6"> Mentores de gran experiencia</h3>
             <p> Contamos con una Red de Mentores con gran experiencia que
             AMAN su trabajo, han sido seleccionados a través de un procedimiento
             riguroso de acreditación y aceptan un código de buenas prácticas para
@@ -120,9 +123,49 @@
 
     <!-- Mentores -->
 
+
+
     <div class="container mentores">
       <div class="row">
         <h1 style="text-align: center; margin-bottom: 80px;"> Mentores YourBestYou </h1>
+        <div class="col-md-7 col-sm-12">
+          <h3 class="mentor-name">
+            Fran  Albacer
+          </h3>
+          <h5> Presidente de la Escuela de Fútbol Albacer.</h5>
+          <div class="mentor-description">
+            <p>
+              Soy Fran  y actualmente soy el presidente de la Escuela de Fútbol Albacer y el gerente del  la Academia Albacer.
+              Licenciado en ADE, economista colegiado, empresario y experto en emprendimiento. Creo que puedo aportar valor  para que los jóvenes que no sepan por donde empezar  puedan construir un plan de acción concreto y definido para conseguir sus objetivos.
+            </p>
+          </div>
+          <div class="mentor-icons">
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
+            <a href="https://twitter.com/zamorovh3?lang=es" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="https://es-es.facebook.com/francisco.gomez.37" target="_blank">
+              <i class="icon-facebook"></i>
+            </a>
+            <a href="https://us.ivoox.com/es/fran--presidente-del-albacer-audios-mp3_rf_1455763_1.html" target="_blank">
+              <i class="icon-music"></i>
+            </a>
+            <a href="http://albacer.es/index.php/contacto" target="_blank">
+              <i class="icon-website"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 magnific">
+          <a href="https://www.youtube.com/watch?v=vFPZSMrJuP0" class="video_pop">
+            <img src="https://img.youtube.com/vi/vFPZSMrJuP0/0.jpg">
+          </a>
+        </div>
+      </div> <!-- end row -->
+
+      <hr class="more_margin">
+
+
+      <div class="row">
         <div class="mentor-data col-md-7 col-sm-12">
           <h3 class="mentor-name">
             Lluisa Ochoa-Trepat
@@ -137,7 +180,7 @@
             </p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="https://twitter.com/lluisaochoa" target="_blank">
               <i class="icon-twitter"></i>
             </a>
@@ -184,7 +227,7 @@
             <p>Dentro de sus últimos éxitos se encuentra la inauguración de su nuevo taller, donde, además de pintar y exponer, da clases de pintura y acoge exposiciones de arte.</p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="https://es.linkedin.com/in/fabiola-almarza-lorente-sorolla-66491071" target="_blank">
               <i class="icon-linkedin-1"></i>
             </a>
@@ -205,42 +248,6 @@
 
       <hr class="more_margin">
 
-      <div class="row">
-        <div class="col-md-7 col-sm-12">
-          <h3 class="mentor-name">
-            Fran Zamora Albacer
-          </h3>
-          <h5> Presidente de la Escuela de Fútbol Albacer.</h5>
-          <div class="mentor-description">
-            <p>
-              Soy Fran Zamora y actualmente soy el presidente de la Escuela de Fútbol Albacer y el gerente del  la Academia Albacer.
-              Licenciado en ADE, economista colegiado, empresario y experto en emprendimiento. Creo que puedo aportar valor  para que los jóvenes que no sepan por donde empezar  puedan construir un plan de acción concreto y definido para conseguir sus objetivos.
-            </p>
-          </div>
-          <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
-            <a href="https://twitter.com/zamorovh3?lang=es" target="_blank">
-              <i class="icon-twitter"></i>
-            </a>
-            <a href="https://es-es.facebook.com/francisco.zamoragomez.37" target="_blank">
-              <i class="icon-facebook"></i>
-            </a>
-            <a href="https://us.ivoox.com/es/fran-zamora-presidente-del-albacer-audios-mp3_rf_1455763_1.html" target="_blank">
-              <i class="icon-music"></i>
-            </a>
-            <a href="http://albacer.es/index.php/contacto" target="_blank">
-              <i class="icon-website"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-5 col-sm-12 magnific">
-          <a href="https://www.youtube.com/watch?v=vFPZSMrJuP0" class="video_pop">
-            <img src="https://img.youtube.com/vi/vFPZSMrJuP0/0.jpg">
-          </a>
-        </div>
-      </div> <!-- end row -->
-
-      <hr class="more_margin">
 
       <div class="row">
         <div class="col-md-7 col-sm-12">
@@ -260,14 +267,14 @@
             </p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="https://twitter.com/carlospuigsagi" target="_blank">
               <i class="icon-twitter"></i>
             </a>
             <a href="https://es.linkedin.com/in/carlospuigfinancefreedom/es" target="_blank">
               <i class="icon-linkedin-1"></i>
             </a>
-            <a href="https://us.ivoox.com/es/fran-zamora-presidente-del-albacer-audios-mp3_rf_1455763_1.html" target="_blank">
+            <a href="https://us.ivoox.com/es/fran--presidente-del-albacer-audios-mp3_rf_1455763_1.html" target="_blank">
               <i class="icon-facebook"></i>
             </a>
             <a href="http://www.carlospuigsagivela.com" target="_blank">
@@ -314,7 +321,7 @@
             </p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="https://twitter.com/yosoyzarko" target="_blank">
               <i class="icon-twitter"></i>
             </a>
@@ -350,7 +357,7 @@
             </p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="https://twitter.com/javipatina" target="_blank">
               <i class="icon-twitter"></i>
             </a>
@@ -377,6 +384,48 @@
       </div> <!-- end row -->
 
       <hr class="more_margin">
+
+
+<!--
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <h3 class="mentor-name">
+            Jonathan Van Durmen
+          </h3>
+          <h5> Criminólogo </h5>
+          <div class="mentor-description">
+            <p>
+              Hola, soy Jonathan Van Durmen. Nací en Bélgica y allí estudié Criminología con una
+              estancia en Canadá y he cursado varios postgrados en España relacionados con la intervención
+              con delincuentes y víctimas, el análisis del delito y los menores en riesgo de exclusión. Ahora soy profesor en dos másteres oficiales relacionados con la Criminología en el Centro Crimina de la Universidad Miguel Hernández y tutorizo a los estudiantes con sus Trabajos Fin de Máster (TFM). Soy vicepresidente y uno de los fundadores de la Asociación de Criminólogos de Madrid. He sido coordinador del proyecto Crimidata, una Web de difusión de estudios sobre delincuencia. Desde hace 7 años estoy trabajando en la red de atención a personas con enfermedad mental grave de la
+              Comunidad de Madrid.
+            </p>
+          </div>
+          <div class="mentor-icons">
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
+            <a href="https://twitter.com/jvandurmen?lang=es" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
+            <a href="https://es.linkedin.com/in/jonathan-van-durmen-0832a017/es" target="_blank">
+              <i class="icon-linkedin-1"></i>
+            </a>
+            <a href="https://www.ivoox.com/mundo-crimina-entrevista-jonathan-van-durmen-audios-mp3_rf_12197650_1.html" target="_blank">
+              <i class="icon-music"></i>
+            </a>
+            <a href="https://www.ivoox.com/mundo-crimina-entrevista-jonathan-van-durmen-audios-mp3_rf_12197650_1.html" target="_blank">
+              <i class="icon-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 magnific">
+          <a href="https://www.youtube.com/watch?v=7H908bfs0eU" class="video_pop">
+            <img src="https://img.youtube.com/vi/7H908bfs0eU/0.jpg">
+          </a>
+        </div>
+      </div>
+
+
+      <hr class="more_margin">  -->
 
       <div class="row">
         <div class="col-md-7 col-sm-12">
@@ -408,7 +457,7 @@
             </p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="http://www.twitter.com/juanmerodio" target="_blank">
               <i class="icon-twitter"></i>
             </a>
@@ -454,7 +503,7 @@
             </p>
           </div>
           <div class="mentor-icons">
-            <button class="button" onclick="showContactPopup(event)"> Solicitar mentoría </button>
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
             <a href="https://twitter.com/joseidiaz" target="_blank">
               <i class="icon-twitter"></i>
             </a>
@@ -472,6 +521,83 @@
         <div class="col-md-5 col-sm-12 magnific">
           <a href="https://www.youtube.com/watch?v=a3b-Y58WBiY" class="video_pop">
             <img src="https://img.youtube.com/vi/a3b-Y58WBiY/0.jpg">
+          </a>
+        </div>
+      </div> <!-- end row -->
+
+      <hr class="more_margin">
+
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <h3 class="mentor-name">
+            Sébastien Leparoux
+          </h3>
+          <h5> Restaurador </h5>
+          <div class="mentor-description">
+            <p>
+              Sébastien Leparoux nacido en Bretaña hizo su estudios en el liceo de enseñanza profesional de Guérande, después un recogido en varios restaurante con estrella Michelin en Francia se marcha a Edimburgo donde asesora y digirió 3 “brasseries” escocesas de lujo y terminara abriendo su propio local “Lafayette”!
+            </p>
+            <p>
+              En 2003 una nueva etapa profesional y personal empezara en Madrid con otro recogido de establecimientos gastronómicos , en 2008 reactivara el proyecto “Lafayette” en la capital , hoy goza del premio al uno de lo mejores sumiller en 2009 en la guía Metrópoli, goza de un sol en la guía Repsol desde 2014, y ha sido premiado por el Blog “salsa de chiles” del periódico ABC como mejor cocina extranjera de España en 2017.
+            </p>
+          </div>
+          <div class="mentor-icons">
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
+            <a href="https://www.instagram.com/restaurantelafayettemadrid/" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/Lafayette-175022485855008/" target="_blank">
+              <i class="icon-facebook"></i>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 magnific">
+          <a href="https://www.youtube.com/watch?v=c5kQ47GTk78" class="video_pop">
+            <img src="https://img.youtube.com/vi/c5kQ47GTk78/0.jpg">
+          </a>
+        </div>
+      </div> <!-- end row -->
+
+      <hr class="more_margin">
+
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <h3 class="mentor-name">
+            José Ramón Hernández Llorens
+          </h3>
+          <h5> Bombero </h5>
+          <div class="mentor-description">
+            <p>
+              Soy José Ramón Hernández Llorens, jefe de dotación de Bomberos.
+              Ya desde niño sabía que me quería dedicar a esto y tener un padre bombero ayudó mucho a tomar esta decisión.
+            </p>
+            <p>
+              Se puede ser bombero de muchas formas y con distintas actitudes pero estoy convencido que al verdadero bombero le apasiona ayudar a los demás, no se rinde hasta que no ha solucionado el problema y su mejor recompensa es ver la cara del que ha ayudado y saber que ha hecho un buen trabajo.
+            </p>
+            <p>
+              El bombero no trabaja sólo, es parte de un equipo que ha de estar bien engranado y motivado, que respeta la jerarquía y a sus compañeros. Su segunda familia.
+            </p>
+            <p>
+              En mis 22 años de experiencia no he parado de moverme por los distintos puestos que ofrece mi servicio y he intentado aprender de todos y todo lo que me rodea.
+            </p>
+            <p>
+              En estos momentos, compagino el trabajo en el parque de bomberos con la formación. Intento trasmitir mis conocimientos a los nuevos bomberos y a los No tan nuevos.
+            </p>
+            <p>
+              Me apasiona lo que hago y creo que si hiciera otra cosa no sería feliz.
+            </p>
+          </div>
+          <div class="mentor-icons">
+            <button class="button" onclick="showContactPopup(event)"> Solicitar información </button>
+            <a href="http://www.telemadrid.es/programas/madrid-contigo/bomberos-que-educan" target="_blank">
+              <i class="icon-website"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 magnific">
+          <a href="https://www.youtube.com/watch?v=3uQglzdR_Lo" class="video_pop">
+            <img src="https://img.youtube.com/vi/3uQglzdR_Lo/0.jpg">
           </a>
         </div>
       </div> <!-- end row -->
