@@ -34,6 +34,12 @@
   font-size: 15px;
 }
 
+.mentor-icons .mentor-price{
+  padding-top: 8px;
+  color: #3f9ad6;
+  display: inline-block;
+}
+
 
 .mentor-icons button{
   float: right;
@@ -50,4 +56,14 @@
 #social-links a{
     display: inline-block;
     padding: 0;
+}
+
+/** Mobile **/
+@media (max-width: 600px) {
+  .mentor-icons .mentor-price {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+    display: block;
+  }
 }
